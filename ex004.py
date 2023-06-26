@@ -1,0 +1,16 @@
+s1 = input('Digite algo:')
+print ('O tipo primitivo é', type(s1))
+print ('É Alfanúmerico?', s1.isalnum())
+print ('É Alfabético?', s1.isalpha())
+print ('É ASCII?', s1.isascii())
+print ('É Decimal?', s1.isdecimal())
+print ('É um dígito?', s1.isdigit())
+print ('É identificado?', s1.isidentifier())
+print ('É em letra minúscula?', s1.islower())
+print ('É númerico?', s1.isnumeric())
+print ('É Printável?', s1.isprintable())
+print ('É em branco?', s1.isspace())
+print ('É um título?', s1.istitle())
+print ('É em UpperCase?', s1.isupper())
+
+
