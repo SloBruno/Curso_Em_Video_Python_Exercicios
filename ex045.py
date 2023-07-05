@@ -1,7 +1,10 @@
 #Jokenpô
 
 from random import randrange
-print("Escolhas:\n1 - Pedra\n2 - Papel\n3 - Tesoura")
+from time import sleep
+print("{:=^40}" .format(" JOKENPÔ "))
+
+print("Escolhas:\n[1] Pedra\n[2] Papel\n[3] Tesoura")
 escolha = int(input("Qual é a sua escolha?"))
 
 if escolha == 1:
@@ -20,7 +23,15 @@ elif pc == 2:
 elif pc == 3:
     pc = 'Tesoura'
 
-print("O computador escolheu", pc,"e você escolheu", escolha)
+print("JO")
+sleep(1)
+print("KEN")
+sleep(1)
+print("PO!")
+
+print("-=" * 25)
+print("O computador escolheu", pc, "e você escolheu", escolha)
+print("-=" * 25)
 
 if escolha == pc:
     print("Empatou!")

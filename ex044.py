@@ -1,5 +1,7 @@
 #Desconto por Método de pagamento
 
+print("{:=^40}" .format(" Loja do Bruno "))
+
 preço = float(input("Digite o preço do produto:"))
 print("Tipo de Pagamento\n1 - À vista\n2 - Parcelado no Cartão")
 
