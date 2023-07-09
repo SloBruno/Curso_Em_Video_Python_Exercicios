@@ -1,14 +1,12 @@
-#Número Primo
-
 num = int(input("Digite um número para saber se ele é primo ou não:"))
+primo = True
 
-primo = 0
+for i in range(2, num):
+    if num % i == 0:
+        primo = False
+        break
 
-for i in range (1, (num+1)):
-  if num % i == 0:
-      primo += 1
-
-if num == 2:
+if primo:
     print("É primo")
 else:
-    print("Não é um número primo.")
+    print("Não é primo")
