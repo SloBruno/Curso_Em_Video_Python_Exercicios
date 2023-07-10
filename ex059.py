@@ -1,12 +1,13 @@
 # Menu de Opções
 
+a = int(input('Digite um valor:'))
+b = int(input('Digite outro valor:'))
+
 exit = False
 
 while not exit:
 
     print()
-    a = int(input('Digite um valor:'))
-    b = int(input('Digite outro valor:'))
 
     print('-='*15)
     print('       Menu de Opções')
@@ -19,20 +20,21 @@ while not exit:
     print('[5] SAIR DO PROGRAMA')
     print()
 
-    escolha = int(input('Escolha:'))
+    escolha = int(input('>>>>>>Escolha:'))
     print()
 
     if escolha == 1:
-        print('A soma é {}' .format(a+b))
+        print('{} + {} = {}' .format(a, b, a+b))
     elif escolha == 2:
-        print('O produto é {}'.format(a * b))
+        print('{} * {} = {}' .format(a, b, a*b))
     elif escolha == 3:
         if a > b:
             print('O número {} é o maior' .format(a))
         else:
             print('O número {} é o maior'.format(b))
     elif escolha == 4:
-        continue
+        a = int(input('Digite um valor:'))
+        b = int(input('Digite outro valor:'))
     elif escolha == 5:
         exit = True
-
+print('Fim do Programa')
