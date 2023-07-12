@@ -6,18 +6,22 @@ termos = 10
 termo = a1
 
 cont = 1
+mais = 1
+total = 0
+mais = 10
 
-while cont <= termos:
-        print('{} => '.format(termo), end="")
-        termo += r
-        cont += 1
+while mais != 0:
+        total += mais
+        while cont <= total:
+                print('{} => '.format(termo), end="")
+                termo += r
+                if mais != 0:
+                        cont += 1
+        print("Pausa")
+        mais = int(input("Quantos termos a mais você quer?"))
+print("Fim, foram printados {} termos" .format(total))
 
-mais = int(input("Quantos termos a mais você quer?"))
-count = mais
 
-for i in range (1, count):
-        a1 = termo
-        termo += r
-        print('{} => '.format(termo), end="")
+
 
 
