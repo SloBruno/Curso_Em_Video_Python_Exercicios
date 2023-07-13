@@ -6,7 +6,7 @@ trig = 0
 
 
 while trig != 999:
-    trig = int(input('Digite um número:'))
+    trig = int(input('Digite um número [999 para parar]:'))
     if trig != 999:
         soma += trig
         num += 1

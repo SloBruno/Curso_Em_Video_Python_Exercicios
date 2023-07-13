@@ -1,7 +1,7 @@
 # Menu de Opções
 
-a = int(input('Digite um valor:'))
-b = int(input('Digite outro valor:'))
+a = float(input('Digite um valor:'))
+b = float(input('Digite outro valor:'))
 
 exit = False
 
