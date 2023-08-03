@@ -19,7 +19,7 @@ ordem = sorted(list)
 menor = ordem[0]
 maior = ordem[-1]
 
-print(f'A lista cadstrada foi {ordem}.\n'
+print(f'A lista cadastrada foi {ordem}.\n'
       f'O menor valor é {menor}.\n'
       f'O maior valor é {maior}.')
 
