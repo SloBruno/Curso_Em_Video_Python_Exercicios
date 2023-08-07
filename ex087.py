@@ -38,3 +38,20 @@ for linha in matriz:
 
 ordem = sorted(segunda_linha)
 maior_valor = ordem[-1]
+
+# Matriz
+
+print('-=-' * 20)
+
+for linha in matriz:
+    for element in linha:
+        print(f'[ {element} ]', end='')
+    print()
+
+print('-=-' * 20)
+
+# Print
+
+print(f'A soma dos valores pares é {pares}.\n'
+      f'A soma dos valores da terceira coluna é {soma_terceira_coluna}.\n'
+      f'O maior valor da segunda linha é {maior_valor}.\n')
