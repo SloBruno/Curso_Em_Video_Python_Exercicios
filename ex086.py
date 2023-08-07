@@ -1,21 +1,25 @@
 matriz = [list(), list(), list()]
 
+# Construção Matriz
+
 for i in range(0, 3):
     valor = int(input(f'Digite um valor para [0, {i}]:'))
     matriz[0].append(valor)
 
-for i in range(0, 3):
-    valor = int(input(f'Digite um valor para [1, {i}]:'))
+for j in range(0, 3):
+    valor = int(input(f'Digite um valor para [1, {j}]:'))
     matriz[1].append(valor)
 
-for i in range(0, 3):
-    valor = int(input(f'Digite um valor para [2, {i}]:'))
+for k in range(0, 3):
+    valor = int(input(f'Digite um valor para [2, {k}]:'))
     matriz[2].append(valor)
 
-print(f'{matriz[0]}\n'
-      f'{matriz[1]}\n'
-      f'{matriz[2]}')
+# Formatação Matriz
 
+for linha in matriz:
+    for elemento in linha:
+        print(f'[{elemento}]', end='')
+    print()
 
 
 
