@@ -15,6 +15,7 @@ jogos = int(input('Quantos jogos você deseja gerar?'))
 for i in range(0, jogos):
     jogo = []
     while len(jogo) < 6:
+
         sorte = randint(1, 60)
         if sorte not in jogo:
             jogo.append(sorte)

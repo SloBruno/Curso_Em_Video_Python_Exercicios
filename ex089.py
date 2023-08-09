@@ -1,20 +1,15 @@
 alunos = []
-nomes = []
-notas = []
-contador = 0
+
 
 while True:
 
     nome = str(input('Nome do Aluno:'))
-    nomes.append(nome)
     notaum = int(input('Nota 1:'))
-    notas.append(notaum)
     notadois = int(input('Nota 2:'))
-    notas.append(notadois)
-    nomes.append(notas[:])
-    alunos.append(nomes[:])
-    nomes.clear()
-    notas.clear()
+
+    aluno = [nome, [notaum, notadois]]
+    alunos.append(aluno)
+
     continuar = str(input('Deseja Continuar? [s/n]:')).lower().strip()
 
     if continuar == 's':
@@ -22,9 +17,26 @@ while True:
     else:
         break
 
-# Média
 
-print('-=-' *20)
-print(f'N° NOME       MÉDIA')
+print('-=-' * 20)
 
-print(alunos[0, 1])
+for c, aluno in enumerate(alunos):
+    nome_aluno = aluno[0]
+    notas = aluno[1]
+    nota_um = notas[0]
+    nota_dois = notas[1]
+    print(f'N°      NOME        MÉDIA\n'
+          f'{c}      {nome_aluno}         {(nota_um+nota_dois)/2} ')
+
+print('-=-' * 20)
+
+
+while True:
+
+    dequal = int(input('De qual aluno você deseja ver a nota?(999 interrompe):'))
+
+    if dequal == 999:
+        break
+    else:
+        print(alunos[dequal][1])
+print('Obrigado')
