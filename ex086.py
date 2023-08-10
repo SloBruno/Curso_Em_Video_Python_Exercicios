@@ -18,7 +18,7 @@ for k in range(0, 3):
 
 for linha in matriz:
     for elemento in linha:
-        print(f'[{elemento}]', end='')
+        print(f'[{elemento:^5}]', end='')
     print()
 
 
