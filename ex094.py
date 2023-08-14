@@ -1,7 +1,7 @@
 pessoas = list()
 pessoa = dict()
 mulheres = list()
-maiores = list()
+maiores = dict()
 
 while True:
     pessoa['nome'] = str(input('Nome:'))
@@ -34,16 +34,16 @@ media = soma_idade/quant
 for v in pessoas:
     idade = v['idade']
     if idade > media:
-        maior = v['nome']
-        maiores.append(maior)
-        maior = v['idade']
-        maiores.append(maior)
+        maiores = v.copy()
 
 print(f'O grupo tem {quant} pessoas.\n'
       f'A média de idade é de {media :.2f} anos.\n'
       f'As mulheres são {mulheres}\n', end='')
-for v in maiores:
-    print(v, 'tem a idade acima da média com', end='')
-    print(v, 'anos de idade.')
-    # print(f'{v} está acima da média com {v+1} anos de idade')
+
+print(f'Lista das pessoas com idade acima da média:')
+for k, v in maiores.items():
+    print()
+    print(k, '=', v, ';', end='')
+
+
 
