@@ -41,9 +41,10 @@ print(f'O grupo tem {quant} pessoas.\n'
       f'As mulheres são {mulheres}\n', end='')
 
 print(f'Lista das pessoas com idade acima da média:')
+print()
 for k, v in maiores.items():
-    print()
     print(k, '=', v, ';', end='')
+    print()
 
 
 
