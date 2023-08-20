@@ -7,6 +7,8 @@ media = alunos['Média']
 
 if media >= 7:
     alunos['Situação'] = 'Aprovado'
+elif 5 <= media < 7:
+    alunos['Situação'] = 'Recuperação'
 else:
     alunos['Situação'] = 'Reprovado'
 

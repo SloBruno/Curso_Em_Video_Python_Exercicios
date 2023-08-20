@@ -29,7 +29,7 @@ nome = jogador['nome']
 print(f'O jogador {nome} jogou {partidas} partidas')
 
 for n, m in enumerate(gols):
-    print(f'    =>Na partida {n}, fez {m} gols')
+    print(f'    =>Na partida {n+1}, fez {m} gols')
 print(f'Foi um total de {total} gols')
 
 
