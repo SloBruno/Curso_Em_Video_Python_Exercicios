@@ -1,11 +1,11 @@
 # Print Formatado
 
-def mensagem(txt):
-    tamanho = len(txt)
+def escreva(txt):
+    tamanho = len(txt) + 4
     print('~'*tamanho)
-    print(f'{txt}')
+    print(f'  {txt}')
     print('~' * tamanho)
 
 
 texto = str(input('Digite uma mensagem:'))
-mensagem(texto)
+escreva(texto)
