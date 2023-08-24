@@ -2,7 +2,13 @@
 
 def ficha(jogador='<desconhecido>', gols=0):
     jogador = str(input('Nome do jogador:'))
-    gols = int(input('Quantidade de gols:'))
+    gols = str(input('Quantidade de gols:'))
+
+    if gols == '':
+        gols = 0
+
+    else:
+        int(gols)
 
     if jogador.strip() == '':
         jogador = '<desconhecido>'
@@ -10,10 +16,10 @@ def ficha(jogador='<desconhecido>', gols=0):
 
 
     else:
-        jogador = str(input('Nome do jogador:'))
-        gols = int(input('Quantidade de gols:'))
         print(f'O jogador {jogador} fez {gols} gols no campenato.')
 
-ficha(jogador, gols)
+
+
+ficha()
 
 
