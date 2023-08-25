@@ -28,9 +28,9 @@ def notas(*nota, sit=False):
     situacao = ''
 
     if sit:
-        if media >= 7:
+        if media >= 8:
             situacao = 'Boa'
-        elif 6 <= media < 7:
+        elif 6 <= media < 8:
             situacao = 'Razoável'
         else:
             situacao = 'Ruim'

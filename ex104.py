@@ -1,18 +1,22 @@
 # Validação de dados
 
+import cores
+
+
 def leia_int(texto):
 
     while True:
         n = input(texto)
 
-        if n.isdigit():
+        if n.isnumeric():
             int(n)
             return n
             break
 
         else:
-            print("Erro! Digite apenas valores inteiros.")
+            print(f" {cores.VERMELHO}Erro! Digite apenas valores inteiros.{cores.RESET}")
 
-n = leia_int("Digite um número inteiro:")
-print(f"Você digitou o número {n}.")
+
+res = leia_int("Digite um número inteiro:")
+print(f"Você digitou o número {res}.")
 
